@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Joe Idan helps international infrastructure, data center, energy, security, and technology companies enter and grow in the Israeli market through local execution, commercial partnerships, logistics, and AI-powered business automation." />
+  <meta name="keywords" content="Joe Idan, Israel Market Entry, AI Infrastructure Israel, Data Center Israel, Business Development Israel, ICU Sensors, Energy Infrastructure Israel, B2B Market Entry Israel, AI Automation" />
+
+  <meta property="og:title" content="Joe Idan — Israel Market Entry & AI Infrastructure Partner" />
+  <meta property="og:description" content="Helping international infrastructure, data center, energy, and technology companies build a practical route into the Israeli market." />
+  <meta property="og:url" content="https://joeidan.com" />
+  <meta property="og:type" content="website" />
+
+  <title>Joe Idan — Israel Market Entry & AI Infrastructure Partner</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --ink:#0c0c10;
+      --cream:#f7f4ee;
+      --gold:#b8965a;
+      --gold-lt:#e8d5a8;
+      --slate:#5a5a6a;
+      --blue:#1e3a5f;
+      --blue-lt:#2c5282;
+      --white:#ffffff;
+      --line:rgba(184,150,90,0.24);
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+    a{color:inherit}
+
+    /* NAV */
+    nav{
+      position:fixed;top:0;left:0;right:0;z-index:100;
+      padding:18px 48px;
+      display:flex;justify-content:space-between;align-items:center;
+      background:rgba(247,244,238,0.92);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(184,150,90,0.15)
+    }
+    .nav-logo{font-family:'Playfair Display',serif;font-size:20px;color:var(--ink);text-decoration:none;letter-spacing:0.5px}
+    .nav-links{display:flex;gap:32px}
+    .nav-links a{font-size:13px;color:var(--slate);text-decoration:none;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;transition:color 0.2s}
+    .nav-links a:hover{color:var(--gold)}
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      align-items:center;
+      padding:120px 80px 80px;
+      gap:80px;
+      max-width:1280px;
+      margin:0 auto
+    }
+    .hero-tag{
+      font-family:'Space Mono',monospace;
+      font-size:11px;
+      letter-spacing:3px;
+      color:var(--gold);
+      text-transform:uppercase;
+      margin-bottom:24px;
+      display:flex;
+      align-items:center;
+      gap:12px
+    }
+    .hero-tag::before{content:'';display:block;width:32px;height:1px;background:var(--gold)}
+    .hero h1{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(44px,5.5vw,76px);
+      font-weight:400;
+      line-height:1.08;
+      color:var(--ink);
+      margin-bottom:18px
+    }
+    .hero h1 em{font-style:italic;color:var(--blue)}
+    .hero-subtitle{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(18px,2vw,25px);
+      font-weight:400;
+      font-style:italic;
+      color:var(--slate);
+      margin-bottom:30px;
+      padding-bottom:30px;
+      border-bottom:1px solid rgba(184,150,90,0.25)
+    }
+    .hero-desc{
+      font-size:16px;
+      color:var(--slate);
+      line-height:1.85;
+      max-width:560px;
+      margin-bottom:40px;
+      font-weight:300
+    }
+    .hero-cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+    .btn-primary{
+      background:var(--blue);
+      color:#fff;
+      padding:14px 32px;
+      text-decoration:none;
+      font-size:13px;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      font-weight:500;
+      transition:background 0.2s
+    }
+    .btn-primary:hover{background:var(--blue-lt)}
+    .btn-secondary{
+      color:var(--blue);
+      font-size:13px;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      font-weight:500;
+      text-decoration:none;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      transition:color 0.2s
+    }
+    .btn-secondary:hover{color:var(--gold)}
+    .btn-secondary::after{content:'→';transition:transform 0.2s}
+    .btn-secondary:hover::after{transform:translateX(4px)}
+    .hero-card{
+      position:relative;
+      background:#fff;
+      padding:42px;
+      border:1px solid var(--line);
+      box-shadow:0 30px 80px rgba(12,12,16,.08)
+    }
+    .hero-card::before{
+      content:'';
+      position:absolute;
+      top:16px;left:16px;right:-16px;bottom:-16px;
+      border:1.5px solid var(--gold);
+      z-index:-1
+    }
+    .hero-card h2{
+      font-family:'Playfair Display',serif;
+      font-size:30px;
+      font-weight:400;
+      margin-bottom:20px;
+      color:var(--blue)
+    }
+    .hero-card p{
+      color:var(--slate);
+      line-height:1.75;
+      margin-bottom:22px;
+      font-weight:300
+    }
+    .signal-list{display:grid;gap:12px;margin-top:28px}
+    .signal{font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--ink);border-top:1px solid rgba(184,150,90,.22);padding-top:12px}
+    .signal span{color:var(--gold);font-family:'Space Mono',monospace;margin-right:8px}
+
+    /* SECTIONS */
+    section{padding:88px 80px}
+    .section-inner{max-width:1120px;margin:0 auto}
+    .section-tag{
+      font-family:'Space Mono',monospace;
+      color:var(--gold);
+      font-size:11px;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      margin-bottom:18px
+    }
+    h2.section-title{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(34px,4vw,52px);
+      font-weight:400;
+      line-height:1.15;
+      margin-bottom:26px
+    }
+    .lead{
+      color:var(--slate);
+      font-size:18px;
+      line-height:1.85;
+      max-width:830px;
+      font-weight:300
+    }
+
+    /* ABOUT */
+    .about{background:var(--blue);color:#fff}
+    .about .section-tag{color:var(--gold-lt)}
+    .about .lead{color:rgba(255,255,255,.82)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:start;margin-top:40px}
+    .about-card{border-top:1px solid rgba(232,213,168,.35);padding-top:24px}
+    .about-card h3{font-family:'Playfair Display',serif;font-size:26px;font-weight:400;margin-bottom:14px}
+    .about-card p{line-height:1.75;color:rgba(255,255,255,.76);font-weight:300}
+
+    /* FOCUS */
+    .focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:42px}
+    .focus-card{background:#fff;border:1px solid var(--line);padding:30px;min-height:260px}
+    .focus-card .num{font-family:'Space Mono',monospace;color:var(--gold);font-size:12px;margin-bottom:22px}
+    .focus-card h3{font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:var(--blue);margin-bottom:16px}
+    .focus-card p{color:var(--slate);line-height:1.75;font-weight:300}
+
+    /* WHO */
+    .who{background:#fff}
+    .who-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
+    .who-item{padding:20px 0;border-bottom:1px solid var(--line);color:var(--slate);line-height:1.6}
+    .who-item strong{color:var(--ink);font-weight:500}
+
+    /* WORK */
+    .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:42px}
+    .work-card{border:1px solid var(--line);background:rgba(255,255,255,.55);padding:32px}
+    .work-card h3{font-family:'Playfair Display',serif;font-size:27px;font-weight:400;color:var(--blue);margin-bottom:14px}
+    .work-card p{color:var(--slate);line-height:1.75;font-weight:300}
+
+    /* CONTACT */
+    .contact{background:var(--ink);color:#fff}
+    .contact .lead{color:rgba(255,255,255,.75)}
+    .contact-actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:34px}
+    .contact a.btn-primary{background:var(--gold);color:var(--ink)}
+    .contact a.btn-primary:hover{background:var(--gold-lt)}
+    .contact .btn-secondary{color:#fff}
+    footer{padding:28px 80px;background:var(--ink);color:rgba(255,255,255,.45);border-top:1px solid rgba(255,255,255,.1);font-size:13px}
+    footer .footer-inner{max-width:1120px;margin:0 auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+    @media (max-width:900px){
+      nav{padding:16px 22px}
+      .nav-links{display:none}
+      .hero{grid-template-columns:1fr;padding:110px 24px 70px;gap:42px}
+      section{padding:70px 24px}
+      .about-grid,.focus-grid,.who-list,.work-grid{grid-template-columns:1fr}
+      .hero-card::before{right:-10px;bottom:-10px}
+      footer{padding:28px 24px}
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#top" class="nav-logo">Joe Idan</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#focus">Focus</a>
+      <a href="#market-entry">Market Entry</a>
+      <a href="#work">Work</a>
+      <a href="#insights">Insights</a>\n      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <div class="hero-tag">Israel Market Entry · AI Infrastructure · Business Automation</div>
+
+        <h1>Joe Idan<br><em>Local execution partner for global technology companies.</em></h1>
+
+        <div class="hero-subtitle">
+          Israel Market Entry & AI Infrastructure Partner
+        </div>
+
+        <p class="hero-desc">
+          I help international infrastructure, data center, energy, security, and technology companies enter and grow in Israel — combining local execution, commercial partnerships, logistics, and AI-powered business automation.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn-primary" href="#contact">Book an Intro Call</a>
+          <a class="btn-secondary" href="#focus">View Focus Areas</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Positioning summary">
+        <h2>Practical market entry, not theory.</h2>
+        <p>
+          I work at the intersection of operations, logistics, commercial development, and technology implementation — helping global vendors build a realistic route into the Israeli market.
+        </p>
+        <p>
+          My focus is where physical infrastructure and applied AI meet: data centers, power, energy, security, connectivity, and business automation.
+        </p>
+
+        <div class="signal-list">
+          <div class="signal"><span>01</span> Local Israeli execution</div>
+          <div class="signal"><span>02</span> B2B infrastructure focus</div>
+          <div class="signal"><span>03</span> AI-powered research & outreach</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="about">
+      <div class="section-inner">
+        <div class="section-tag">About</div>
+        <h2 class="section-title">A bridge between traditional operations and technological innovation.</h2>
+        <p class="lead">
+          I bring together business development, systems thinking, logistics, data analysis, and applied AI. My work is especially relevant for companies that need more than a distributor list — they need a trusted local partner who can understand the market, map opportunities, connect the right people, and help turn research into execution.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Business & Infrastructure</h3>
+            <p>
+              I support companies operating in complex B2B environments: data centers, energy infrastructure, security, cooling, connectivity, power systems, and industrial supply chains.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>AI & Technology Implementation</h3>
+            <p>
+              I use AI, BI, automation, and structured research workflows to accelerate market analysis, lead prioritization, outreach, documentation, and operational decision-making.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="section-inner">
+        <div class="section-tag">Focus Areas</div>
+        <h2 class="section-title">Where I can create immediate value.</h2>
+        <p class="lead">
+          My role is strongest when technology, commercial execution, and local market knowledge need to work together.
+        </p>
+
+        <div class="focus-grid">
+          <div class="focus-card">
+            <div class="num">01</div>
+            <h3>Israel Market Entry</h3>
+            <p>
+              Helping international vendors understand the Israeli market, identify relevant sectors, map potential customers and partners, and build a practical first-stage entry plan.
+            </p>
+          </div>
+
+          <div class="focus-card">
+            <div class="num">02</div>
+            <h3>AI Infrastructure & Data Centers</h3>
+            <p>
+              Focus on infrastructure opportunities around data centers, power, cooling, energy, security, cabling, sensors, and mission-critical environments.
+            </p>
+          </div>
+
+          <div class="focus-card">
+            <div class="num">03</div>
+            <h3>AI-Powered Business Automation</h3>
+            <p>
+              Building workflows for market research, BI, lead generation, supplier analysis, outreach prioritization, and operational optimization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="market-entry" class="who">
+      <div class="section-inner">
+        <div class="section-tag">Who I Help</div>
+        <h2 class="section-title">For companies that need a serious local route into Israel.</h2>
+        <p class="lead">
+          The best fit is an international B2B company with strong technology or infrastructure capabilities, but limited local representation or execution capacity in Israel.
+        </p>
+
+        <div class="who-list">
+          <div class="who-item"><strong>International manufacturers</strong> without established Israeli representation.</div>
+          <div class="who-item"><strong>Data center, energy, HVAC, security, and connectivity vendors</strong> looking for local business development.</div>
+          <div class="who-item"><strong>Infrastructure companies</strong> that need market research, local validation, and commercial introductions.</div>
+          <div class="who-item"><strong>Management teams</strong> looking to combine AI-driven research with practical field execution.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="section-inner">
+        <div class="section-tag">Selected Work</div>
+        <h2 class="section-title">Current direction and operating model.</h2>
+        <p class="lead">
+          My work combines board-level thinking with hands-on execution: research, process design, systems integration, outreach infrastructure, and opportunity development.
+        </p>
+
+        <div class="work-grid">
+          <div class="work-card">
+            <h3>ICU Sensors Israel</h3>
+            <p>
+              At ICU Sensors, I work across technology implementation, operational innovation, automation, data analysis, and future-facing business development, with a focus on infrastructure and international vendor opportunities.
+            </p>
+          </div>
+
+          <div class="work-card">
+            <h3>AI Market Research Systems</h3>
+            <p>
+              I develop AI-assisted workflows for identifying market opportunities, scanning companies, structuring leads, summarizing trends, and supporting decision-making in B2B environments.
+            </p>
+          </div>
+
+          <div class="work-card">
+            <h3>Operational Technology</h3>
+            <p>
+              Experience connecting traditional logistics and operations with new software, automation, analytics, and process infrastructure.
+            </p>
+          </div>
+
+          <div class="work-card">
+            <h3>Commercial Bridge</h3>
+            <p>
+              Helping translate international vendor capabilities into locally relevant positioning, partner conversations, and actionable business development steps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights">
+      <div class="section-inner">
+        <div class="section-tag">Insights</div>
+        <h2 class="section-title">Writing on infrastructure, AI and market entry.</h2>
+        <p class="lead">Practical analysis for international technology and infrastructure companies evaluating the Israeli market.</p>
+        <div class="work-grid">
+          <article class="work-card">
+            <h3>Why Israel's Infrastructure Boom Requires a Seven-Layer Operating Strategy</h3>
+            <p>Data centers are simultaneously power, cooling, connectivity, safety, security, energy and operating projects. A cross-segment view of what successful execution in Israel requires.</p>
+            <p style="margin-top:20px"><a class="btn-secondary" href="/posts/israel-infrastructure-seven-layer-strategy.html">Read article</a></p>
+          </article>
+        </div>
+        <p style="margin-top:28px"><a class="btn-secondary" href="/insights/">View all insights</a></p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-inner">
+        <div class="section-tag">Contact</div>
+        <h2 class="section-title">Let’s discuss Israel market entry.</h2>
+        <p class="lead">
+          If you are evaluating the Israeli market in infrastructure, data centers, energy, security, or AI-enabled business development, I am open to a focused introductory conversation.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn-primary" href="mailto:joe.idan@gmail.com?subject=Intro%20conversation%20-%20Israel%20Market%20Entry">Email Joe</a>
+          <a class="btn-secondary" href="https://www.linkedin.com/in/joe-idan/" target="_blank" rel="noopener">LinkedIn Profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© 2026 Joe Idan. All rights reserved.</div>
+      <div>Israel Market Entry · AI Infrastructure · Business Automation</div>
+    </div>
+  </footer>
+</body>
+</html>
+
